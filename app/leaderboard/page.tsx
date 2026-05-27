@@ -21,13 +21,17 @@ export default function Leaderboard() {
       className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#0b0017] via-[#1a0030] to-[#0b0017] text-white overflow-hidden"
       style={{ fontFamily: "var(--font-poppins)" }}
     >
-      <section
-        className="relative w-full h-[40vh] bg-cover bg-center"
-        style={{ backgroundImage: "url('backgroundPic.jpg')" }}
-      >
-        {" "}
+      <section className="relative w-full h-[40vh] overflow-hidden">
+        <div
+          className="absolute left-1/2 top-1/2 w-[100vh] h-[100vw] -translate-x-1/2 -translate-y-1/2 rotate-90 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/backgroundPic.jpg')",
+          }}
+        ></div>
+
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#0b0017] to-transparent"></div>
+
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-5xl font-extrabold text-white tracking-wide text-center">
             Fundraiser Leaderboard
