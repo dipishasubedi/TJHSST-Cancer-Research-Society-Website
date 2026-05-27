@@ -23,7 +23,7 @@ export default function Leaderboard() {
     >
       <section
         className="relative w-full h-[40vh] bg-cover bg-center"
-        style={{ backgroundImage: "url('backgroundPic.jpeg')" }}
+        style={{ backgroundImage: "url('backgroundPic.jpg')" }}
       >
         {" "}
         <div className="absolute inset-0 bg-black/40"></div>
@@ -147,7 +147,8 @@ export default function Leaderboard() {
           content: "";
           position: absolute;
           inset: 0;
-          background: radial-gradient(
+          background:
+            radial-gradient(
               circle at 25% 25%,
               rgba(179, 136, 255, 0.08),
               transparent 40%
