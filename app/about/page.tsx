@@ -19,10 +19,15 @@ export default function About() {
       style={{ fontFamily: "var(--font-poppins)" }}
     >
       {/* Hero Section */}
-      <section
-        className="relative w-full h-[40vh] bg-cover bg-center"
-        style={{ backgroundImage: "url('backgroundPic.jpeg')" }}
-      >
+      {/* Hero Section */}
+      <section className="relative w-full h-[40vh] overflow-hidden">
+        <div
+          className="absolute left-1/2 top-1/2 w-[100vh] h-[100vw] -translate-x-1/2 -translate-y-1/2 rotate-90 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/backgroundPic.jpg')",
+          }}
+        ></div>
+
         <div className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-[#0b0017] to-transparent"></div>
         <div className="absolute inset-0 bg-black/40"></div>
 
@@ -93,10 +98,14 @@ export default function About() {
         @keyframes glow {
           0%,
           100% {
-            box-shadow: 0 0 15px #9b59b6, 0 0 30px #6c5ce7;
+            box-shadow:
+              0 0 15px #9b59b6,
+              0 0 30px #6c5ce7;
           }
           50% {
-            box-shadow: 0 0 30px #9b59b6, 0 0 60px #6c5ce7;
+            box-shadow:
+              0 0 30px #9b59b6,
+              0 0 60px #6c5ce7;
           }
         }
         @keyframes bounce {
