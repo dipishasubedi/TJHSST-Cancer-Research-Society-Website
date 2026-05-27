@@ -9,11 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  const links = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "Our Team" },
-    { href: "/leaderboard", label: "Fundraising Leaderboard" },
-  ];
+  const links = [{ href: "/", label: "Home" }];
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-[#0b0017]/95 backdrop-blur-md text-white">

@@ -47,7 +47,7 @@ export default function RootLayout({
             <div className="flex justify-center gap-6 mb-8 flex-wrap">
               <a
                 href="mailto:tjcancerresearchsoc@gmail.com"
-                className="bg-purple-950/60 rounded-2xl w-24 h-24 shadow-md transition-all duration-200 transform hover:scale-101 hover:shadow-[0_0_15px_rgba(192,132,252,0.5)] active:opacity-70 flex flex-col items-center justify-center"
+                className="bg-purple-950/60 rounded-2navbxl w-24 h-24 shadow-md transition-all duration-200 transform hover:scale-101 hover:shadow-[0_0_15px_rgba(192,132,252,0.5)] active:opacity-70 flex flex-col items-center justify-center"
               >
                 <Mail className="text-purple-300 w-10 h-10 mb-1" />
                 <p className="text-xs text-gray-300">Email Us</p>
