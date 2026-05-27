@@ -81,7 +81,7 @@ export default function RootLayout({
 
             <p className="text-gray-400 text-xs mt-4">
               &copy; {new Date().getFullYear()} TJ Cancer Research Society. All
-              rights reserved. Made by Dipisha Subedi.
+              rights reserved.
             </p>
           </div>
         </footer>

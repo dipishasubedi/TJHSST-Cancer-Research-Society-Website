@@ -26,7 +26,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-8 text-gray-200 font-semibold">
+        {/* <div className="hidden md:flex space-x-8 text-gray-200 font-semibold">
           {links.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -45,7 +45,7 @@ export default function Navbar() {
             );
           })}
         </div>
-
+*/}
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
           <button

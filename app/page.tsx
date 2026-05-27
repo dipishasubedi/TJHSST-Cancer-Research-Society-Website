@@ -8,14 +8,14 @@ export default function Home() {
       className="flex flex-col min-h-screen text-gray-800"
       style={{ fontFamily: "var(--font-poppins)" }}
     >
-      {/* 🖼 Hero Section */}
-      <section
-        className="relative w-full h-[50vh] bg-cover bg-center flex items-center justify-center"
-        style={{
-          backgroundImage: "url('backgroundPic.jpeg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative w-full h-[50vh] overflow-hidden flex items-center justify-center">
+        <div
+          className="absolute left-1/2 top-1/2 w-[100vh] h-[100vw] -translate-x-1/2 -translate-y-1/2 rotate-90 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/backgroundPic.jpg')",
+          }}
+        ></div>
+        <div className="absolute inset-0  bg-black/30"></div>
         <h1 className="relative z-10 text-5xl font-extrabold text-white text-center">
           <Typewriter
             words={[
@@ -32,13 +32,10 @@ export default function Home() {
           />
         </h1>
       </section>
-
-      {/* 💜 Layer 1 — Our Purpose & Mission */}
       <section
         className="flex flex-col lg:flex-row items-center justify-between gap-10 pt-0 py-4 bg-gradient-to-br from-purple-200 via-purple-100 to-purple-300 px-10 lg:px-32 rounded-3xl shadow-md"
         style={{ fontFamily: "var(--font-poppins)" }}
       >
-        {/* Text Section */}
         <div className="flex-1 text-left">
           <h2 className="text-4xl font-bold text-purple-900 mb-2">
             Our Purpose
@@ -54,7 +51,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Video Section */}
         <div className="flex-1 w-full flex justify-center mt-8 lg:mt-10 translate-x-5">
           <iframe
             src="https://docs.google.com/presentation/d/e/2PACX-1vSis_rEjAh8flLqj-LdjTM0QzoVSbp8rXOQ_4tiIfFJansnALzpcL-jDHZD78KLeeHEkWjDSYcCfEJv/pubembed?start=false&loop=true&delayms=3000"
@@ -63,24 +59,19 @@ export default function Home() {
           ></iframe>
         </div>
       </section>
-
-      {/* 🤍 Layer 2 — What We Do */}
       <section
         className="flex flex-col items-center justify-center text-center py-0 pt-4 bg-white text-purple-900 px-6 overflow-hidden"
         style={{ fontFamily: "var(--font-poppins)" }}
       >
         <h2 className="text-4xl font-bold font-stretch-90%">What We Do</h2>
 
-        {/* Horizontal cell row */}
         <div className="flex justify-center gap-6 overflow-x-auto px-2 py-1">
-          {/* Cell 1 */}
           <div className="relative w-[20rem] h-[20rem] flex-shrink-0">
             <img
               src="/cell.png"
               alt="Lectures Cell"
               className="absolute inset-0 w-full h-full object-contain opacity-90 hover:scale-105 transition-transform duration-500"
             />
-            {/* Overlay Text */}
             <div className="absolute inset-0 flex flex-col justify-start items-center pb-4 pt-38 px-2 text-center">
               <h3 className="text-3xl font-bold text-purple-900 drop-shadow-md">
                 Lectures
@@ -92,7 +83,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Cell 2 */}
           <div className="relative w-[20rem] h-[20rem] flex-shrink-0 flex items-center justify-center">
             <img
               src="/cell.png"
@@ -110,7 +100,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Cell 3 */}
           <div className="relative w-[20rem] h-[20rem] flex-shrink-0 flex items-center justify-center">
             <img
               src="/cell.png"
@@ -129,8 +118,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* 💜 Join Section */}
       <section
         className="flex flex-col items-center justify-center text-center py-8 bg-gradient-to-br from-purple-300 via-purple-200 to-purple-400"
         style={{ fontFamily: "var(--font-poppins)" }}
